@@ -17,13 +17,14 @@
 
 namespace NetSuite\Classes;
 
-class File extends Record {
+class File extends Record
+{
     /**
      * @var string
      */
     public $name;
     /**
-     * @var \NetSuite\Classes\FileAttachFrom
+     * @var FileAttachFrom
      */
     public $attachFrom;
     /**
@@ -31,15 +32,15 @@ class File extends Record {
      */
     public $mediaTypeName;
     /**
-     * @var \NetSuite\Classes\MediaType
+     * @var MediaType
      */
     public $fileType;
     /**
-     * @var \NetSuite\Classes\base64Binary
+     * @var base64Binary
      */
     public $content;
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
     public $folder;
     /**
@@ -55,11 +56,11 @@ class File extends Record {
      */
     public $urlComponent;
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
     public $mediaFile;
     /**
-     * @var \NetSuite\Classes\TextFileEncoding
+     * @var TextFileEncoding
      */
     public $textFileEncoding;
     /**
@@ -67,7 +68,7 @@ class File extends Record {
      */
     public $description;
     /**
-     * @var \NetSuite\Classes\FileEncoding
+     * @var FileEncoding
      */
     public $encoding;
     /**
@@ -75,11 +76,11 @@ class File extends Record {
      */
     public $altTagCaption;
     /**
-     * @var boolean
+     * @var bool
      */
     public $isOnline;
     /**
-     * @var boolean
+     * @var bool
      */
     public $isInactive;
     /**
@@ -87,7 +88,7 @@ class File extends Record {
      */
     public $class;
     /**
-     * @var boolean
+     * @var bool
      */
     public $bundleable;
     /**
@@ -95,15 +96,15 @@ class File extends Record {
      */
     public $department;
     /**
-     * @var boolean
+     * @var bool
      */
     public $hideInBundle;
     /**
-     * @var boolean
+     * @var bool
      */
     public $isPrivate;
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
     public $owner;
     /**
@@ -111,7 +112,7 @@ class File extends Record {
      */
     public $caption;
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
     public $storeDisplayThumbnail;
     /**
@@ -131,7 +132,7 @@ class File extends Record {
      */
     public $createdDate;
     /**
-     * @var \NetSuite\Classes\FileSiteCategoryList
+     * @var FileSiteCategoryList
      */
     public $siteCategoryList;
     /**
@@ -142,37 +143,37 @@ class File extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
-        "name" => "string",
-        "attachFrom" => "FileAttachFrom",
-        "mediaTypeName" => "string",
-        "fileType" => "MediaType",
-        "content" => "base64Binary",
-        "folder" => "RecordRef",
-        "fileSize" => "float",
-        "url" => "string",
-        "urlComponent" => "string",
-        "mediaFile" => "RecordRef",
-        "textFileEncoding" => "TextFileEncoding",
-        "description" => "string",
-        "encoding" => "FileEncoding",
-        "altTagCaption" => "string",
-        "isOnline" => "boolean",
-        "isInactive" => "boolean",
-        "class" => "string",
-        "bundleable" => "boolean",
-        "department" => "string",
-        "hideInBundle" => "boolean",
-        "isPrivate" => "boolean",
-        "owner" => "RecordRef",
-        "caption" => "string",
-        "storeDisplayThumbnail" => "RecordRef",
-        "siteDescription" => "string",
-        "featuredDescription" => "string",
-        "lastModifiedDate" => "dateTime",
-        "createdDate" => "dateTime",
-        "siteCategoryList" => "FileSiteCategoryList",
-        "internalId" => "string",
-        "externalId" => "string",
+    static public $paramtypesmap = array(
+        'name' => 'string',
+        'attachFrom' => 'FileAttachFrom',
+        'mediaTypeName' => 'string',
+        'fileType' => 'MediaType',
+        'content' => 'base64Binary',
+        'folder' => 'RecordRef',
+        'fileSize' => 'float',
+        'url' => 'string',
+        'urlComponent' => 'string',
+        'mediaFile' => 'RecordRef',
+        'textFileEncoding' => 'TextFileEncoding',
+        'description' => 'string',
+        'encoding' => 'FileEncoding',
+        'altTagCaption' => 'string',
+        'isOnline' => 'boolean',
+        'isInactive' => 'boolean',
+        'class' => 'string',
+        'bundleable' => 'boolean',
+        'department' => 'string',
+        'hideInBundle' => 'boolean',
+        'isPrivate' => 'boolean',
+        'owner' => 'RecordRef',
+        'caption' => 'string',
+        'storeDisplayThumbnail' => 'RecordRef',
+        'siteDescription' => 'string',
+        'featuredDescription' => 'string',
+        'lastModifiedDate' => 'dateTime',
+        'createdDate' => 'dateTime',
+        'siteCategoryList' => 'FileSiteCategoryList',
+        'internalId' => 'string',
+        'externalId' => 'string',
     );
 }
