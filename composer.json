@@ -15,13 +15,13 @@
     "ext-soap": "*",
     "ext-SimpleXML": "*",
     "ext-openssl": "*",
-    "paragonie/random_compat": ">=1",
-    "psr/log": "^1.0"
+    "paragonie/random_compat": ">=9.99.100",
+    "psr/log": "^1.1.4"
   },
   "require-dev": {
-    "phpspec/phpspec": ">=5",
-    "phpunit/phpunit": "^9.5",
-    "mikey179/vfsstream": "^1.6"
+    "phpspec/phpspec": ">=7.4",
+    "phpunit/phpunit": "^9.6.10",
+    "mikey179/vfsstream": "^1.6.11"
   },
   "suggest": {
     "vlucas/phpdotenv": "Provides loading a .env file for obtaining config variables",
